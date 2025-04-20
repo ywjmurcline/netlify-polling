@@ -5,7 +5,7 @@ document.getElementById('userForm').addEventListener('submit', async (e) => {
     const email = document.getElementById('email').value;
     
     try {
-        const response = await fetch(`${process.env.SITE}/api/users`, { //TODO
+        const response = await fetch(`https://render-polling.onrender.com/api/users`, { //TODO
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
